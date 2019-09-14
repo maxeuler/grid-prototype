@@ -13,6 +13,29 @@
   flex-basis: calc(var(--initialbasis) - var(--gap));
 }
 
+@media only screen and (min-width: 480px) {
+  .col-1-2,
+  .col-2 {
+    --width: 2;
+  }
+
+  .col-1-4,
+  .col-2-4,
+  .col-3,
+  .col-4 {
+    --width: 4;
+  }
+
+  .order-2,
+  .order-3 {
+    order: 2;
+  }
+
+  .order-1 {
+    order: 1;
+  }
+}
+
 html {
   box-sizing: border-box;
 }
